@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SisBiblioteca_v10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SisBiblioteca_v10/dist/SisBiblioteca_v10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
