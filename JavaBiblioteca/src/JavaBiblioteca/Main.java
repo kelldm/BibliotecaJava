@@ -1,9 +1,7 @@
 package JavaBiblioteca;
 
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main
@@ -170,6 +168,22 @@ public class Main
             FileWriter arquivo1= new FileWriter(newFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    } //Terminar depois
+
+    public static void carregaArquvivo(){
+        try{
+            String str;
+            BufferedReader reader, reader1;
+            reader = new BufferedReader(new FileReader(new File("C:\\bd\\livros.txt")));
+            while((str=reader1.readLine())!=null){
+                String[]arrOfStr = str.split(",");
+                livros[i]=new Livro(arrOfStr[0].trim(),arrOfStr[1].trim(),arrOfStr[2].trim());
+                i++;
+            }
+            reader.close();
+
+            reader1=new BufferedReader(new FileReader(new File("C:\\bd\\revistas.txt")));
         }
     }
     
